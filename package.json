@@ -1,5 +1,5 @@
 {
-  "name": "x-ray-json-test",
+  "name": "x-ray-repro-336",
   "version": "1.0.0",
   "description": "https://github.com/matthewmueller/x-ray/issues/336",
   "main": "src/index.js",
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@leonardodino/x-ray": "2.3.4-alpha.2",
+    "table": "5.2.3",
     "x-ray": "2.3.3"
   },
   "devDependencies": {

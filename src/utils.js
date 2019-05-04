@@ -1,3 +1,5 @@
+const { table } = require('table')
+
 const qs = url => {
   if (!url.includes('?')) return {}
   const query = url.replace(/^.*\?([^?]+)$/, '$1')
@@ -9,4 +11,6 @@ const qs = url => {
   }, {})
 }
 
-module.exports = { qs }
+const print = object => `<pre>${table(Object.entries(object))}</pre>`
+
+module.exports = { qs, print }
